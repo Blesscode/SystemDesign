@@ -1,0 +1,3 @@
+# POLYMORPHISM
+
+- Iheritance is mandatory
