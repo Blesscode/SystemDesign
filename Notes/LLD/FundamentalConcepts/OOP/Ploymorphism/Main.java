@@ -5,44 +5,23 @@ public class Main{
         Main obj1=new Main();
 
         //case1
-        //Snake snake=new Snake(); error
-        Snake snake=new Snake("Jhon",2,"cat");
-        System.out.println(snake.getName());//call parent method 
-        snake.shedSkin(); //child method call
-        snake.speak();//child method call 
-        System.out.println(snake.profile());
 
+        Snake snake=new Snake("Sam",2,"snake");
+
+        snake.speak();
+      
         System.out.println("----------------------------------------------------------------");
         
         //case2
         Pets snake2=new Snake("Jhon",2,"snake");
-        System.out.println(snake2.getName());//call parent method 
-        snake2.speak();
-        //child methods  : error
-        /*snake2.shedSkin(); //child method call
-        snake2.speak();//child method call
-        System.out.println(snake2.profile());//child method call*/
-        //TO CALL CHILD METHODS DO : typecast obj to child type to access child also i.e typecaste to case 1
-        ((Snake)snake2).shedSkin(); //child method call
-        ((Snake)snake2).speak();//child method call
-        System.out.println(((Snake)snake2).profile());
+        snake2.speak();//child method call instead of parent
 
-         System.out.println("----------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------");
 
-         //case3
-         Pets snake3=new Snake("Jhon",2,"cat");
-        System.out.println(snake.getName());//call parent method 
-         //child methods  : error
-        /*snake2.shedSkin(); //child method call
-        snake2.speak();//child method call
-        System.out.println(snake2.profile());//child method call*/
-
-        //TO CALL CHILD METHODS DO : typecast obj to child type to access child also i.e typecaste to case 1
-
-        ((Snake)snake3).shedSkin(); //child method call
-        ((Snake)snake3).speak();//child method call
-        System.out.println(((Snake)snake3).profile());
-        
+        //case3
+        Pets snake3=new Pets("Mike",2,"snake");
+        snake3.speak();
+       
         System.out.println("----------------------------------------------------------------");
 
     }

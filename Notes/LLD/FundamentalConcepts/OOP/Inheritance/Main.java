@@ -6,7 +6,7 @@ public class Main{
 
         //case1
         //Snake snake=new Snake(); error
-        Snake snake=new Snake("Jhon",2,"cat");
+        Snake snake=new Snake("Jhon",2,"snake");
         System.out.println(snake.getName());//call parent method 
         snake.shedSkin(); //child method call
         snake.speak();//child method call 
@@ -22,7 +22,9 @@ public class Main{
         /*snake2.shedSkin(); //child method call
         snake2.speak();//child method call
         System.out.println(snake2.profile());//child method call*/
+
         //TO CALL CHILD METHODS DO : typecast obj to child type to access child also i.e typecaste to case 1
+        
         ((Snake)snake2).shedSkin(); //child method call
         ((Snake)snake2).speak();//child method call
         System.out.println(((Snake)snake2).profile());
@@ -30,18 +32,13 @@ public class Main{
          System.out.println("----------------------------------------------------------------");
 
          //case3
-         Pets snake3=new Snake("Jhon",2,"cat");
+         Pets snake3=new Pets("Jhon",2,"snake");
         System.out.println(snake.getName());//call parent method 
-         //child methods  : error
-        /*snake2.shedSkin(); //child method call
-        snake2.speak();//child method call
-        System.out.println(snake2.profile());//child method call*/
-
-        //TO CALL CHILD METHODS DO : typecast obj to child type to access child also i.e typecaste to case 1
-
-        ((Snake)snake3).shedSkin(); //child method call
+    
+        //CANNOT BE CASTED TO SNAKE OBJECT TO BE LIKE CASE 1 BECAUSE IT'S NOT A INSTANCE OF SNAKE IT'S JUST A PLAIN PET OBJECT
+        /*((Snake)snake3).shedSkin(); //child method call
         ((Snake)snake3).speak();//child method call
-        System.out.println(((Snake)snake3).profile());
+        System.out.println(((Snake)snake3).profile());*/
         
         System.out.println("----------------------------------------------------------------");
 
