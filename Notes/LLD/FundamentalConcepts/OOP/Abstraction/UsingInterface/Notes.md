@@ -22,3 +22,5 @@ when you need
 4. In interfaces, all non-default methods are implicitly abstract — no abstract keyword even needed.
 5. Implementing class =mandatory override all abstract methods `unless implementing class also marked abstract.`
 6. Interface class methods are called using: interface class refrence with implementing class obj
+7. **To access interface variable in implementation class** : use INTERFACE_NAME.VARIABLE_NAME 🌟
+8. **You cannot access private interface methods outside the interface**🌟

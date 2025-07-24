@@ -2,7 +2,7 @@ abstract class AbstractBank{
     AbstractBank(){
         System.out.println("Trust Net Banking");
     }
-    Integer establishYear;
+    String leagallyAuthorized="Legally Authorized";
     static String bankType = "Private";
 
     abstract Integer getIntrestRate();
